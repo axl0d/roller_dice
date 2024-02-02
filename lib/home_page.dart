@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: const Color(0xff35654d),
       body: Center(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
               'Roller Dice Game',
@@ -18,6 +18,8 @@ class HomePage extends StatelessWidget {
                 textStyle: Theme.of(context).textTheme.displayLarge,
               ),
             ),
+            const SizedBox(height: 50),
+            const SizedBox(height: 50),
             const AnimatedButton()
           ],
         ),
