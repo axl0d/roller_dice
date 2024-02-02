@@ -12,7 +12,17 @@ class GameRoomPage extends StatelessWidget {
       appBar: AppBar(elevation: 0),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Wrap(
+              spacing: 50,
+              children: [
+                Image.asset('assets/dice1.png'),
+                Image.asset('assets/dice2.png'),
+                Image.asset('assets/dice3.png'),
+              ],
+            ),
+            const SizedBox(height: 50),
             AnimatedButton(onTap: () {}, title: 'R O L L !'),
           ],
         ),
