@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:roller_dice/game_room_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -107,28 +108,31 @@ class _AnimatedButtonState extends State<AnimatedButton>
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: _controller,
-      builder: (context, _) => Container(
-        width: 300,
-        height: 80,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          gradient: LinearGradient(
-            begin: _topAlignmentAnimation.value,
-            end: _bottomAlignmentAnimation.value,
-            colors: const [
-              Color(0xfffaff00),
-              Color(0xffff1000),
-              Color(0xffff6a00),
-            ],
+      builder: (context, _) => GestureDetector(
+        onTap: () => Navigator.pushNamed(context, GameRoomPage.routeName),
+        child: Container(
+          width: 300,
+          height: 80,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            gradient: LinearGradient(
+              begin: _topAlignmentAnimation.value,
+              end: _bottomAlignmentAnimation.value,
+              colors: const [
+                Color(0xfffaff00),
+                Color(0xffff1000),
+                Color(0xffff6a00),
+              ],
+            ),
           ),
-        ),
-        child: Center(
-          child: Text(
-            'P L A Y',
-            style: Theme.of(context).textTheme.displaySmall!.copyWith(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),
+          child: Center(
+            child: Text(
+              'P L A Y',
+              style: Theme.of(context).textTheme.displaySmall!.copyWith(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+            ),
           ),
         ),
       ),

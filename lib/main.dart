@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roller_dice/game_room_page.dart';
 
 import 'home_page.dart';
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       initialRoute: HomePage.routeName,
       routes: {
         HomePage.routeName: (context) => const HomePage(),
+        GameRoomPage.routeName: (context) => const GameRoomPage()
       },
     );
   }
