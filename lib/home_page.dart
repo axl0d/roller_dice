@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Roller Dice Game',
+              'JUEGO RODAR LOS DADOS',
               style: GoogleFonts.bungeeSpice(
                 textStyle: Theme.of(context).textTheme.displayLarge,
               ),
@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 50),
             AnimatedButton(
               onTap: () => Navigator.pushNamed(context, GameRoomPage.routeName),
-              title: 'P L A Y',
+              title: 'J U G A R',
             )
           ],
         ),
