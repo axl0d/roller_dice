@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roller_dice/animated_button.dart';
 
 class GameRoomPage extends StatelessWidget {
   const GameRoomPage({super.key});
@@ -9,7 +10,13 @@ class GameRoomPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(elevation: 0),
-      body: Column(),
+      body: Center(
+        child: Column(
+          children: [
+            AnimatedButton(onTap: () {}, title: 'R O L L !'),
+          ],
+        ),
+      ),
     );
   }
 }
