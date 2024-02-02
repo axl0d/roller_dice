@@ -23,6 +23,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 50),
+            Image.asset('assets/dice3d.png', height: 200),
             const SizedBox(height: 50),
             AnimatedButton(
               onTap: () => Navigator.pushNamed(context, GameRoomPage.routeName),
