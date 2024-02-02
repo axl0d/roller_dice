@@ -8,11 +8,7 @@ class GameRoomPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: const Color(0xff35654d),
-      ),
-      backgroundColor: const Color(0xff35654d),
+      appBar: AppBar(elevation: 0),
       body: Column(),
     );
   }
